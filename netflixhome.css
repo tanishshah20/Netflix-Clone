@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.hero-section{
+    background-image: url(http://127.0.0.1:53944/Clone%20Netflix/Netflix-img/hero-section-background.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 0px 500px rgba(0, 0, 0, 0.650);
+}
+
+
+.header{
+    height: max-content;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header img{
+    height: 55px;
+    margin: 1rem 2rem;
+}
+.header span{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .lang {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.6rem;
+    margin: 0 1rem;
+    color: rgb(138, 135, 135);
+    border: 1px solid grey;
+    border-radius: 5px;
+    gap: 1rem;
+}
+.header .lan{
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    color: rgb(138, 135, 135);
+}
+.header span a{
+    height: fit-content;
+    width: fit-content;
+    padding: 0.6rem;
+    margin: 0 0.5rem;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header span a:hover{
+    text-decoration: underline;
+}
+
+
+.container-box{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+.container{
+    margin: 10rem auto 11rem;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.container h3{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.container h4{
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.container .started form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .started [type="email"]{
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.300);
+    color:  rgb(138, 135, 135);
+    padding: 1rem;
+    margin: 0.5rem;
+    height: 50px;
+    width: 350px;
+    font-size: 1rem;
+}
+.container .started [type="submit"]{
+    height: 50px;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.box{
+    min-height: 500px;
+    width: 100%;
+    border-top: 7px solid rgba(87, 86, 86, 0.612);
+    background-color: black;
+    color: white;
+}
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-content{
+    height: 450px;
+    width: 470px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.box-content h1{
+    font-weight: 900;
+    font-size: 2.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.5rem 0;
+}
+.box-content h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tv1{
+    height: 400px;
+    width: 500px;
+    position: relative;
+}
+.tv1 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.tv1 video{
+    height: 250px;
+    width: 430px;
+    position: absolute;
+    top: 80px;
+    left: 65px;
+}
+
+
+.mob{
+    height: 400px;
+    width: 500px;
+    position: relative;
+}
+.mob img{
+    height: 100%;
+    width: 100%;
+}
+.download{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    border: 3px solid rgba(87, 86, 86, 0.612);
+    border-radius: 10px;
+}
+.download img{
+    height: 90px;
+    width: 80px;
+    align-items: center;
+    object-fit: contain;
+    margin: 0.5rem;
+}
+.download span{
+    width: fit-content;
+    margin: 0.5rem;
+}
+.download span h3{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.download span h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dodgerblue;
+}
+.mob .download .gif{
+    height: 50px;
+    width: 50px;
+}
+
+
+.tv2{
+    height: 400px;
+    width: 500px;
+    position: relative;
+}
+.tv2 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.tv2 video{
+    height: 250px;
+    width: 310px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+
+.child{
+    height: 400px;
+    width: 500px;
+}
+.child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.faq{
+    height: fit-content;
+    width: 100%;
+    border-top: 7px solid rgba(87, 86, 86, 0.612);
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4rem;
+}
+.faq h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0.5rem;
+}
+.faq-que{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+.faq-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin: 0.25rem 0;
+    font-size: 0.7rem;
+    font-weight: 300;
+    background-color: rgba(87, 86, 86, 0.612);
+}
+.faq-box h1{
+    margin: 0.5rem;
+}
+.faq-que .faq-box i{
+    margin: 0.5rem;
+}
+
+
+.faq h4{
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.faq .started form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.faq .started [type="email"]{
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.300);
+    color:  rgb(138, 135, 135);
+    padding: 1rem;
+    margin: 0.5rem;
+    height: 50px;
+    width: 350px;
+    font-size: 1rem;
+}
+.faq .started [type="submit"]{
+    height: 50px;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.footer{
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 3rem;
+    border-top: 7px solid rgba(87, 86, 86, 0.612);
+    background-color: black;
+    color: rgb(138, 135, 135);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 80%;
+}
+.footer-content p{
+    margin: 1rem 0;
+}
+.footer-content p span{
+    text-decoration: underline;
+}
+.footer-content p span:hover{
+    cursor: pointer;
+}
+.footer-info{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-info li {
+    width: 230px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+.footer-info li:hover{
+    cursor: pointer;
+}
+.footer-content .lang {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 5px;
+    gap: 1rem;
+}
+.footer-content .lan{
+    font-size: 1rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.852);
+    color: white;
+}

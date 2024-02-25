@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+marquee{
+    height: fit-content;
+}
+marquee img{
+    height: 200px;
+    width: fit-content;
+    border: 5px solid darkgrey;
+    border-radius: 30px;
+    padding: 2rem;
+}
