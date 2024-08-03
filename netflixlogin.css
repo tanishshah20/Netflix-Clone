@@ -13,7 +13,7 @@
 .box{
     height: max-content;
     width: 100%;
-    background-image: url(http://127.0.0.1:53944/Clone%20Netflix/Netflix-img/hero-section-background.jpg);
+    background-image: url(Netflix-img/hero-section-background.jpg);
     background-position: center;
     background-size: cover;
     box-shadow: inset 0px 0px 0px 500px rgba(0, 0, 0, 0.650);
